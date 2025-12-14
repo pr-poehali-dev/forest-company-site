@@ -88,9 +88,8 @@ export default function Index() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Crect fill='%230a0a0a' width='1920' height='1080'/%3E%3C/svg%3E"
         >
-          <source src="/video/production.mp4" type="video/mp4" />
+          <source src="https://cdn.pixabay.com/video/2023/08/29/178029-859615147_large.mp4" type="video/mp4" />
         </video>
         <div className="relative z-20 container mx-auto px-6 text-center animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
