@@ -81,12 +81,15 @@ export default function Index() {
       </nav>
 
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/aa079e6b-fa23-45be-833e-17512ac2f801/files/decbc79f-0d2b-4f6e-b18c-bf9a69541125.jpg')`
-          }}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://cdn.pixabay.com/video/2022/09/01/130194-745980764_large.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
         <div className="relative z-20 container mx-auto px-6 text-center animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
@@ -121,6 +124,27 @@ export default function Index() {
               создаёт продукцию высочайшего качества для самых требовательных клиентов.
             </p>
           </div>
+          
+          <div className="max-w-5xl mx-auto mb-16">
+            <Card className="bg-gradient-to-br from-card to-card/50 border-gold/20 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative aspect-video">
+                  <video
+                    controls
+                    className="w-full h-full"
+                    poster="https://cdn.poehali.dev/projects/aa079e6b-fa23-45be-833e-17512ac2f801/files/868fc248-1bce-4490-9f3d-3c32a5b752e0.jpg"
+                  >
+                    <source src="https://cdn.pixabay.com/video/2021/05/05/73609-546896716_large.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-2 text-gold">Наш производственный процесс</h3>
+                  <p className="text-muted-foreground">От строгания лиственницы до упаковки и отгрузки</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="bg-gradient-to-br from-card to-card/50 border-gold/20 hover-lift">
               <CardContent className="p-8 text-center">
