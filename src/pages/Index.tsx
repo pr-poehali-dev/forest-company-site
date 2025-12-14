@@ -81,16 +81,13 @@ export default function Index() {
       </nav>
 
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black z-10" />
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="https://cdn.pixabay.com/video/2023/08/29/178029-859615147_large.mp4" type="video/mp4" />
-        </video>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://cdn.poehali.dev/projects/aa079e6b-fa23-45be-833e-17512ac2f801/files/decbc79f-0d2b-4f6e-b18c-bf9a69541125.jpg')`
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
         <div className="relative z-20 container mx-auto px-6 text-center animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
             <span className="text-gold">ПЛК</span>
